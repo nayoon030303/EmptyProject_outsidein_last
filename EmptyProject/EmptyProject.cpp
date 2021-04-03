@@ -10,6 +10,10 @@
 //LPDIRECT3DTEXTURE9* tex;
 //LPD3DXSPRITE spr;
 
+int map[WIDTH * HEIGHT];
+int binaryMap[WIDTH * HEIGHT];
+DWORD* mapData = new DWORD[WIDTH * HEIGHT];
+
 /* manager */
 InputManager inputManager;
 PageManager pageManager;
@@ -112,7 +116,7 @@ LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam,
 //--------------------------------------------------------------------------------------
 void CALLBACK OnD3D9LostDevice( void* pUserContext )
 {
-    //delete (&pageManager);
+    //
     //(*tex)->Release();
    //spr->Release();
 }
@@ -123,6 +127,7 @@ void CALLBACK OnD3D9LostDevice( void* pUserContext )
 //--------------------------------------------------------------------------------------
 void CALLBACK OnD3D9DestroyDevice( void* pUserContext )
 {
+    pageManager.deleteCurrent();
 }
 
 
