@@ -4,6 +4,8 @@
 
 Player::Player()
 {
+	playerState = ON_EDGE;
+
 	D3DXCreateSprite(DXUTGetD3D9Device(), &sprite);
 	playerTex = new LPDIRECT3DTEXTURE9();
 	D3DXCreateTextureFromFileExA(
@@ -28,15 +30,77 @@ void Player:: Render()
 {
 	
 	sprite->Begin(D3DXSPRITE_ALPHABLEND);
-	D3DXVECTOR3 pos(STARTX_POINT+px, STARTY_POINT+py, 0);
+	D3DXVECTOR3 pos(STARTX_POINT+px-5, STARTY_POINT+py-5, 0);
 	sprite->Draw(*playerTex, nullptr, nullptr, &pos, D3DCOLOR_ARGB(255, 0, 255, 0));
 	sprite->End();
 }
 
 void Player::Update()
 {
-	//if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
-	if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
+	if ((GetAsyncKeyState(VK_CONTROL) & 0x8000) != 0)
+	{
+		press = true;
+	}
+
+	if (playerState == ON_EDGE)
+	{
+		
+		if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
+		{
+			nextMap = map[py * WIDTH + (px+1)];
+			CanGo();
+		}
+		else if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
+		{
+			nextMap = map[py * WIDTH + (px - 1)];
+			CanGo();
+		}
+		else if ((GetAsyncKeyState(VK_UP) & 0x8000) != 0)
+		{
+			nextMap = map[(py-1) * WIDTH + px];
+			CanGo();
+		}
+		else if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0)
+		{
+			nextMap = map[(py+1) * WIDTH + px];
+			CanGo();
+		}
+	}
+	else if (playerState == VISITING)
+	{
+		if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
+		{
+			nextMap = map[py * WIDTH + (px + 1)];
+			CanGo();
+		}
+		else if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
+		{
+			nextMap = map[py * WIDTH + (px - 1)];
+			CanGo();
+		}
+		else if ((GetAsyncKeyState(VK_UP) & 0x8000) != 0)
+		{
+			nextMap = map[(py - 1) * WIDTH + px];
+			CanGo();
+		}
+		else if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0)
+		{
+			nextMap = map[(py + 1) * WIDTH + px];
+			CanGo();
+		}
+	}
+
+	press = false;
+}
+void Player::CanGo()
+{
+	if ((nextMap == MAP_PROPERTY_EMPTY) && press)
+	{
+		playerState = VISITING;
+		pos.x = px;
+		pos.y = py;
+	}
+	else if (nextMap == MAP_PROPERTY_EDGE)
 	{
 		px += 1;
 	}

@@ -6,8 +6,9 @@
 GameSystem::GameSystem()
 {
 	Load();
-	player->px = 0;
-	player->py =0;
+	player->px = 2;
+	player->py =2;
+	player->playerState = player->ON_EDGE;
 
 	//map√ ±‚»≠
 	/*EMPTY*/
