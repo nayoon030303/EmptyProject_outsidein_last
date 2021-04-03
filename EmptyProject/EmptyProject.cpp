@@ -5,6 +5,14 @@
 //--------------------------------------------------------------------------------------
 #include "DXUT.h"
 #include "resource.h"
+#include "global.h"
+
+//LPDIRECT3DTEXTURE9* tex;
+//LPD3DXSPRITE spr;
+
+/* manager */
+InputManager inputManager;
+PageManager pageManager;
 
 
 //--------------------------------------------------------------------------------------
@@ -40,6 +48,9 @@ bool CALLBACK ModifyDeviceSettings( DXUTDeviceSettings* pDeviceSettings, void* p
 HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
                                      void* pUserContext )
 {
+    //D3DXCreateSprite(pd3dDevice, &spr);
+
+    pageManager.MakeTitlePage();
     return S_OK;
 }
 
@@ -60,6 +71,7 @@ HRESULT CALLBACK OnD3D9ResetDevice( IDirect3DDevice9* pd3dDevice, const D3DSURFA
 //--------------------------------------------------------------------------------------
 void CALLBACK OnFrameMove( double fTime, float fElapsedTime, void* pUserContext )
 {
+    pageManager.Update();
 }
 
 
@@ -76,6 +88,10 @@ void CALLBACK OnD3D9FrameRender( IDirect3DDevice9* pd3dDevice, double fTime, flo
     // Render the scene
     if( SUCCEEDED( pd3dDevice->BeginScene() ) )
     {
+        
+        pageManager.Render();
+
+   
         V( pd3dDevice->EndScene() );
     }
 }
@@ -96,6 +112,9 @@ LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam,
 //--------------------------------------------------------------------------------------
 void CALLBACK OnD3D9LostDevice( void* pUserContext )
 {
+    //delete (&pageManager);
+    //(*tex)->Release();
+   //spr->Release();
 }
 
 
@@ -135,7 +154,7 @@ INT WINAPI wWinMain( HINSTANCE, HINSTANCE, LPWSTR, int )
     DXUTSetHotkeyHandling( true, true, true );  // handle the default hotkeys
     DXUTSetCursorSettings( true, true ); // Show the cursor and clip it when in full screen
     DXUTCreateWindow( L"EmptyProject" );
-    DXUTCreateDevice( false, 1920, 1080 );
+    DXUTCreateDevice( true, 1920, 1080 );
 
     // Start the render loop
     DXUTMainLoop();
