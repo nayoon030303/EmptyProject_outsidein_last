@@ -28,7 +28,7 @@ void TitlePage::Render()
 {
    
     sprite->Begin(D3DXSPRITE_ALPHABLEND);
-    D3DXVECTOR3 pos(STARTX_POINT-601/2, STARTY_POINT,0);
+    D3DXVECTOR3 pos(STARTX_POINT, STARTY_POINT,0);
     sprite->Draw(*backgroundTex, nullptr, nullptr, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));
     sprite->End();
 }

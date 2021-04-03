@@ -17,6 +17,7 @@ DWORD* mapData = new DWORD[WIDTH * HEIGHT];
 /* manager */
 InputManager inputManager;
 PageManager pageManager;
+GameSystem gameSystem;
 
 
 //--------------------------------------------------------------------------------------
@@ -54,6 +55,7 @@ HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURF
 {
     //D3DXCreateSprite(pd3dDevice, &spr);
 
+    gameSystem.Load();
     pageManager.MakeTitlePage();
     return S_OK;
 }

@@ -11,10 +11,6 @@ public:
 	void Update()override;
 
 
-	LPDIRECT3DTEXTURE9* backgroundTex;
-	LPDIRECT3DTEXTURE9* maskTex;
-	//LPDIRECT3DTEXTURE9 backgroundTex;
-
-	LPD3DXSPRITE spr;
+	
 };
 
