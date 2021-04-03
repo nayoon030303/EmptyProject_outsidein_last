@@ -46,10 +46,7 @@ void GameSystem::Update()
 void GameSystem::Render()
 {
 	D3DXVECTOR3 pos(STARTX_POINT, STARTY_POINT, 0);
-	/*spr->Begin(D3DXSPRITE_ALPHABLEND);
 	
-	spr->Draw(*backgroundTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));
-	spr->End();*/
 	
 	spr->Begin(D3DXSPRITE_ALPHABLEND);
 	spr->Draw(*maskTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));

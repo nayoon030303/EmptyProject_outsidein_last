@@ -35,9 +35,10 @@ void Player:: Render()
 
 void Player::Update()
 {
-	if (GetAsyncKeyState((VK_LEFT) * 0x8000) != 0)
+	//if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
+	if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
 	{
-		px -= 1;
+		px += 1;
 	}
 }
 
