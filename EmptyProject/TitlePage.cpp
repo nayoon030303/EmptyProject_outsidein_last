@@ -1,27 +1,36 @@
 #include "DXUT.h"
-#include "TitlePage.h"
 #include "global.h"
+#include "TitlePage.h"
+
 
 TitlePage::TitlePage()
 {
-    D3DXCreateSprite(DXUTGetD3D9Device(), &sprite);
-
     backgroundTex = new LPDIRECT3DTEXTURE9();
-    D3DXCreateTextureFromFileExA(DXUTGetD3D9Device(), "img/background.png", D3DX_DEFAULT_NONPOW2, D3DX_DEFAULT_NONPOW2, 0,
+    D3DXCreateTextureFromFileExA(
+        DXUTGetD3D9Device(),
+        "img/mask.png", 
+        D3DX_DEFAULT_NONPOW2, 
+        D3DX_DEFAULT_NONPOW2,
+        0,
         0,
         D3DFMT_UNKNOWN,
         D3DPOOL_MANAGED,
         D3DX_DEFAULT,
         D3DX_DEFAULT,
         0,
-        nullptr, nullptr, backgroundTex);
-    
+        nullptr,
+        nullptr,
+        backgroundTex);
+
+    D3DXCreateSprite(DXUTGetD3D9Device(), &sprite);
 }
 
 TitlePage::~TitlePage()
 {
-    sprite->Release();
+
     (*backgroundTex)->Release();
+    sprite->Release();
+        
 }
 
 void TitlePage::Render()
@@ -37,7 +46,7 @@ void TitlePage::Update()
 {
     if ((GetAsyncKeyState(VK_SPACE) * 0x8000) != 0)
     {
-        pageManager.MakeFirstGamePage();
+        //pageManager.MakeFirstGamePage();
     }
 
 }

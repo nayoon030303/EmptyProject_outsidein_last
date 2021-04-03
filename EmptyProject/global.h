@@ -31,13 +31,14 @@
 #define STARTY_POINT 200
 
 
-extern InputManager inputManager;
 extern PageManager pageManager;
 extern GameSystem gameSystem;
+extern DWORD* mapData;
+
 
 extern int map[WIDTH * HEIGHT];
 extern int binaryMap[WIDTH * HEIGHT];
-extern DWORD* mapData;
+
 
 //extern LPDIRECT3DTEXTURE9* tex;
 //

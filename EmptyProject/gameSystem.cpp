@@ -2,8 +2,12 @@
 #include "gameSystem.h"
 #include "global.h"
 
+
 GameSystem::GameSystem()
 {
+	Load();
+	player->px = 2;
+	player->py = 2;
 
 	//mapÃÊ±âÈ­
 	/*EMPTY*/
@@ -36,14 +40,14 @@ GameSystem::GameSystem()
 
 void GameSystem::Update()
 {
-
+	player->Update();
 }
 
 void GameSystem::Render()
 {
 	spr->Begin(D3DXSPRITE_ALPHABLEND);
 	D3DXVECTOR3 pos(STARTX_POINT, STARTY_POINT, 0);
-	spr->Draw(*maskTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));
+	spr->Draw(*backgroundTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));
 	spr->End();
 	
 	spr->Begin(D3DXSPRITE_ALPHABLEND);
@@ -63,6 +67,8 @@ void GameSystem::Render()
 		}
 	}
 	spr->End();
+
+	//player->Render();
 
 }
 
@@ -95,12 +101,16 @@ void GameSystem::Load()
 		0,
 		nullptr, nullptr, dotTex);
 
-	RECT tdr = { 0,0,640,480 };
+	RECT tdr = { 0,0,WIDTH,HEIGHT };
 	D3DLOCKED_RECT tlr;
-	if (SUCCEEDED((*backgroundTex)->LockRect(0, &tlr, &tdr, 0)))
+	if ((*backgroundTex) != nullptr)
 	{
-		//DWORD* p = (DWORD*)tlr.pBits;
-		//memcpy(mapData, p, WIDTH * HEIGHT * 4);
-		//(*backgroundTex)->UnlockRect(0);
+		if (SUCCEEDED((*backgroundTex)->LockRect(0, &tlr, &tdr, 0)))
+		{
+			DWORD* p = (DWORD*)tlr.pBits;
+			memcpy(mapData, p, WIDTH * HEIGHT * 4);
+			(*backgroundTex)->UnlockRect(0);
+		}
 	}
+
 }
