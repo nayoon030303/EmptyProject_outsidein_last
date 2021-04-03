@@ -9,7 +9,7 @@ FirstPage::FirstPage()
 }
 void FirstPage::Render()
 {
-	
+	int a = WIDTH;
 	gameSystem.Render();
 
 }
@@ -21,9 +21,9 @@ void FirstPage::Update()
 
 FirstPage::~FirstPage()
 {
-	(*gameSystem.backgroundTex)->Release();
+	/*(*gameSystem.backgroundTex)->Release();
 	(*gameSystem.maskTex)->Release();
 	(*gameSystem.dotTex)->Release();
-	(gameSystem.spr)->Release();
+	(gameSystem.spr)->Release();*/
 	
 }

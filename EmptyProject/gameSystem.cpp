@@ -6,8 +6,8 @@
 GameSystem::GameSystem()
 {
 	Load();
-	player->px = 2;
-	player->py = 2;
+	player->px = 0;
+	player->py =0;
 
 	//mapÃÊ±âÈ­
 	/*EMPTY*/
@@ -45,13 +45,14 @@ void GameSystem::Update()
 
 void GameSystem::Render()
 {
-	spr->Begin(D3DXSPRITE_ALPHABLEND);
 	D3DXVECTOR3 pos(STARTX_POINT, STARTY_POINT, 0);
+	/*spr->Begin(D3DXSPRITE_ALPHABLEND);
+	
 	spr->Draw(*backgroundTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));
-	spr->End();
+	spr->End();*/
 	
 	spr->Begin(D3DXSPRITE_ALPHABLEND);
-	//spr->Draw(*maskTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));
+	spr->Draw(*maskTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));
 	spr->End();
 
 	spr->Begin(D3DXSPRITE_ALPHABLEND);
@@ -68,7 +69,7 @@ void GameSystem::Render()
 	}
 	spr->End();
 
-	//player->Render();
+	player->Render();
 
 }
 
@@ -113,4 +114,13 @@ void GameSystem::Load()
 		}
 	}
 
+}
+
+GameSystem::~GameSystem()
+{
+	delete player;
+	spr->Release();
+	(*backgroundTex)->Release();
+	(*maskTex)->Release();
+	(*dotTex)->Release();
 }

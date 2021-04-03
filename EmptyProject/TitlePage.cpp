@@ -46,7 +46,7 @@ void TitlePage::Update()
 {
     if ((GetAsyncKeyState(VK_SPACE) * 0x8000) != 0)
     {
-        //pageManager.MakeFirstGamePage();
+        pageManager.MakeFirstGamePage();
     }
 
 }

@@ -12,12 +12,9 @@
 
 int map[WIDTH * HEIGHT];
 int binaryMap[WIDTH * HEIGHT];
-DWORD* mapData = new DWORD[WIDTH * HEIGHT];
-
-/* manager */
-InputManager inputManager;
+int mapData[WIDTH * HEIGHT];/* manager */
 PageManager pageManager;
-GameSystem gameSystem;
+
 
 
 //--------------------------------------------------------------------------------------
@@ -53,8 +50,6 @@ bool CALLBACK ModifyDeviceSettings( DXUTDeviceSettings* pDeviceSettings, void* p
 HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
                                      void* pUserContext )
 {
-    //D3DXCreateSprite(pd3dDevice, &spr);
-
    
     pageManager.MakeTitlePage();
     return S_OK;
@@ -118,9 +113,7 @@ LRESULT CALLBACK MsgProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam,
 //--------------------------------------------------------------------------------------
 void CALLBACK OnD3D9LostDevice( void* pUserContext )
 {
-    //
-    //(*tex)->Release();
-   //spr->Release();
+ 
 }
 
 

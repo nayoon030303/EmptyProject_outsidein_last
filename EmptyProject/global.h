@@ -1,6 +1,4 @@
 #pragma once
-#include "DXUT.h"
-#include "inputManager.h"
 #include "pageManager.h"
 #include "gameSystem.h"
 
@@ -32,12 +30,13 @@
 
 
 extern PageManager pageManager;
-extern GameSystem gameSystem;
-extern DWORD* mapData;
+//extern GameSystem gameSystem;
+
 
 
 extern int map[WIDTH * HEIGHT];
 extern int binaryMap[WIDTH * HEIGHT];
+extern int mapData[WIDTH * HEIGHT];
 
 
 //extern LPDIRECT3DTEXTURE9* tex;
