@@ -49,6 +49,7 @@ void GameSystem::Update()
 	}
 
 	player->Update();
+	enemy->Update();
 }
 
 void GameSystem::MakeEdge()
@@ -139,14 +140,6 @@ void GameSystem::FloodFill(int x, int y, int n, int m)
 
 	}
 }
-GameSystem::~GameSystem()
-{
-	delete player;
-	spr->Release();
-	(*backgroundTex)->Release();
-	(*maskTex)->Release();
-	(*dotTex)->Release();
-}
 void GameSystem::Load()
 {
 	D3DXCreateSprite(DXUTGetD3D9Device(), &spr);
@@ -217,6 +210,15 @@ void GameSystem::Load()
 		(*backgroundTex)->UnlockRect(0);
 	}
 }
+GameSystem::~GameSystem()
+{
+	delete player;
+	delete enemy;
+	spr->Release();
+	(*backgroundTex)->Release();
+	(*maskTex)->Release();
+	(*dotTex)->Release();
+}
 void GameSystem::Render()
 {
 	D3DXVECTOR3 pos(STARTX_POINT, STARTY_POINT, 0);
@@ -246,10 +248,8 @@ void GameSystem::Render()
 			}
 		}
 	}
-	
-
 	spr->End();
 
 	player->Render();
-
+	enemy->Render();
 }
