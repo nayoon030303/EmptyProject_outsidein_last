@@ -8,7 +8,7 @@ Player::Player()
 
 	playerState = ON_EDGE;
 	makeVisit = false;
-
+	speed = 3;
 	D3DXCreateSprite(DXUTGetD3D9Device(), &sprite);
 	playerTex = new LPDIRECT3DTEXTURE9();
 	D3DXCreateTextureFromFileExA(
@@ -46,7 +46,7 @@ void Player::Update()
 	}
 	if (px >= WIDTH)
 	{
-		px = WIDTH - 1;
+		px = WIDTH-1;
 	}
 	if (py < 0)
 	{
@@ -54,7 +54,7 @@ void Player::Update()
 	}
 	if (py >= HEIGHT)
 	{
-		py = HEIGHT - 1;
+		py = HEIGHT-1;
 	}
 
 
@@ -72,7 +72,7 @@ void Player::Update()
 			CanVisiting();
 			if (nextMap == MAP_PROPERTY_EDGE)
 			{
-				px += 1;
+				px += speed;
 			}
 			
 		}
@@ -82,7 +82,7 @@ void Player::Update()
 			CanVisiting();
 			if (nextMap == MAP_PROPERTY_EDGE)
 			{
-				px -= 1;
+				px -= speed;
 			}
 		}
 		else if ((GetAsyncKeyState(VK_UP) & 0x8000) != 0)
@@ -91,7 +91,7 @@ void Player::Update()
 			CanVisiting();
 			if (nextMap == MAP_PROPERTY_EDGE)
 			{
-				py -= 1;
+				py -= speed;
 			}
 		}
 		else if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0)
@@ -100,7 +100,7 @@ void Player::Update()
 			CanVisiting();
 			if (nextMap == MAP_PROPERTY_EDGE)
 			{
-				py += 1;
+				py += speed;
 			}
 		}
 	}
@@ -118,9 +118,9 @@ void Player::Update()
 			{
 				int nx = visitingPos[i].x;
 				int ny = visitingPos[i].y;
-				map[ny * WIDTH + nx] = MAP_PROPERTY_EMPTY;
+				//map[ny * WIDTH + nx] = MAP_PROPERTY_EMPTY;
 			}
-			visitingPos.clear();
+			//visitingPos.clear();
 		}
 
 		else if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
@@ -128,8 +128,14 @@ void Player::Update()
 			nextMap = map[py * WIDTH + (px + 1)];
 			if (nextMap == MAP_PROPERTY_EMPTY)
 			{
-				px += 1;
+				for (int i = px+1; i <=px + speed; ++i)
+				{
+					map[py * WIDTH + i] = MAP_PROPERTY_VISITING;
+					visitingPos.push_back(D3DXVECTOR2(i, py));
+				}
+				px += speed;
 			}
+			
 			CanEdge();
 		}
 		else if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
@@ -137,7 +143,7 @@ void Player::Update()
 			nextMap = map[py * WIDTH + (px - 1)];
 			if (nextMap == MAP_PROPERTY_EMPTY)
 			{
-				px -= 1;
+				px -= speed;
 			}
 			CanEdge();
 		}
@@ -146,8 +152,14 @@ void Player::Update()
 			nextMap = map[(py - 1) * WIDTH + px];
 			if (nextMap == MAP_PROPERTY_EMPTY)
 			{
-				py -= 1;
+				for (int i = py; i >= py - speed; --i)
+				{
+					map[i * WIDTH + px] = MAP_PROPERTY_VISITING;
+					visitingPos.push_back(D3DXVECTOR2(px, i));
+				}
+				py -= speed;
 			}
+			
 			CanEdge();
 		}
 		else if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0)
@@ -155,7 +167,7 @@ void Player::Update()
 			nextMap = map[(py + 1) * WIDTH + px];
 			if (nextMap == MAP_PROPERTY_EMPTY)
 			{
-				py += 1;
+				py += speed;
 			}
 			CanEdge();
 		}
@@ -165,8 +177,6 @@ void Player::Update()
 
 void Player::CanEdge()
 {
-	visitingPos.push_back(D3DXVECTOR2(px, py));
-	map[py * WIDTH + px] = MAP_PROPERTY_VISITING;
 	if (nextMap == MAP_PROPERTY_EDGE)
 	{
 		playerState = ON_EDGE;

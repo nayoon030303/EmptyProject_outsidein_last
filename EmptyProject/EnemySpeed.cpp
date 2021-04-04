@@ -36,21 +36,22 @@ void EnemySpeed::Update()
 	x += vx;
 	y += vy;
 
-	if (map[y * WIDTH + x] == MAP_PROPERTY_VISIT)
+	if (binaryMap[y * WIDTH + x] == MAP_PROPERTY_VISIT)
 	{
-		bool top = (map[(y - 1) * WIDTH + x] == MAP_PROPERTY_VISIT);
-		bool bottom = (map[(y + 1) * WIDTH + x] == MAP_PROPERTY_VISIT);
+		//аб©Л 
+		bool above = (map[(y + 1) * 640 + x] == MAP_PROPERTY_VISIT);
+		bool below = (map[(y - 1) * 640 + x] == MAP_PROPERTY_VISIT);
 
 		x -= vx;
 		y -= vy;
 
-		if (top && bottom)
+		if (above && below)
 		{
-			vy *= -1;
+			vx *= -1;
 		}
 		else
 		{
-			vx *= -1;
+			vy *= -1;
 		}
 		return;
 	}
@@ -60,7 +61,7 @@ void EnemySpeed::Update()
 		x = 0;
 		vx *= -1;
 	}
-	if (x >= (WIDTH-10))
+	if (x >= (WIDTH))
 	{
 		x = WIDTH - 10;
 		vx *= -1;
@@ -70,7 +71,7 @@ void EnemySpeed::Update()
 		y = 0;
 		vy *= -1;
 	}
-	if (y >= (HEIGHT-10))
+	if (y >= (HEIGHT))
 	{
 		y = HEIGHT - 10;
 		vy *= -1;

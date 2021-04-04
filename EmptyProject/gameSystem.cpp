@@ -8,8 +8,8 @@ using namespace std;
 GameSystem::GameSystem()
 {
 	Load();
-	player->px = 2;
-	player->py =2;
+	player->px = 0;
+	player->py = 0;
 	player->playerState = player->ON_EDGE;
 
 	//map√ ±‚»≠
@@ -23,19 +23,19 @@ GameSystem::GameSystem()
 		}
 	}
 	/*EDGE*/
-	for (int y = 2; y <HEIGHT-3; ++y)
+	for (int y = 0; y <HEIGHT; ++y)
 	{
-		map[y * WIDTH + 2] = MAP_PROPERTY_EDGE;
-		map[y * WIDTH + (WIDTH-3)] = MAP_PROPERTY_EDGE;
-		binaryMap[y * WIDTH + 1] = MAP_PROPERTY_EDGE;
-		binaryMap[y * WIDTH + (WIDTH-1)] = MAP_PROPERTY_EDGE;
+		map[y * WIDTH + 0] = MAP_PROPERTY_EDGE;
+		map[y * WIDTH + (WIDTH-1)] = MAP_PROPERTY_EDGE;
+		binaryMap[y * WIDTH + 0] = MAP_PROPERTY_VISIT;
+		binaryMap[y * WIDTH + (WIDTH-1)] = MAP_PROPERTY_VISIT;
 	}
-	for (int x = 2; x < WIDTH-3; ++x)
+	for (int x = 0; x < WIDTH; ++x)
 	{
-		map[2 * WIDTH + x] = MAP_PROPERTY_EDGE;
-		map[(HEIGHT-3) * WIDTH + x] = MAP_PROPERTY_EDGE;
-		binaryMap[1 * WIDTH + x] = MAP_PROPERTY_EDGE;
-		binaryMap[(HEIGHT-1) * WIDTH + x] = MAP_PROPERTY_EDGE;
+		map[0 * WIDTH + x] = MAP_PROPERTY_EDGE;
+		map[(HEIGHT-1) * WIDTH + x] = MAP_PROPERTY_EDGE;
+		binaryMap[0 * WIDTH + x] = MAP_PROPERTY_VISIT;
+		binaryMap[(HEIGHT-1) * WIDTH + x] = MAP_PROPERTY_VISIT;
 	}
 
 	
@@ -54,9 +54,9 @@ void GameSystem::Update()
 
 void GameSystem::MakeEdge()
 {
-	for (int x = 0; x < WIDTH-1; ++x)
+	for (int x = 0; x < WIDTH; ++x)
 	{
-		for (int y = 0; y < HEIGHT-1; ++y)
+		for (int y = 0; y < HEIGHT; ++y)
 		{
 			if (map[y * WIDTH + x] == MAP_PROPERTY_VISIT)
 			{
@@ -78,7 +78,7 @@ void GameSystem::MakeEdge()
 }
 void GameSystem::SetProperty()
 {
-	FloodFill(500, 500, MAP_PROPERTY_EMPTY, MAP_PROPERTY_TEMP);
+	FloodFill(enemy->getPos().x, enemy->getPos().y, MAP_PROPERTY_EMPTY, MAP_PROPERTY_TEMP);
 
 	for (int i = 0; i < WIDTH * HEIGHT; ++i)
 	{

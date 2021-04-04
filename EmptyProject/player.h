@@ -28,7 +28,7 @@ public:
 	bool press;
 	bool makeVisit;
 	int nextMap;
-	
+	int speed;
 
 	D3DXVECTOR2 getPos()
 	{

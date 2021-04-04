@@ -1,100 +1,6 @@
-﻿  EnemySpeed.cpp
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(5,1): error C2653: 'EnemySpeed': 클래스 또는 네임스페이스 이름이 아닙니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(6,1): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(7,2): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(8,2): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(9,2): error C2065: 'vx': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(10,2): error C2065: 'vy': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(11,41): error C2065: 'sprite': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(27,3): error C2065: 'enemyTexture': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(29,1): warning C4508: 'EnemySpeed': 함수는 값을 반환해야 하므로 'void' 반환 형식으로 간주됩니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(31,6): error C2653: 'EnemySpeed': 클래스 또는 네임스페이스 이름이 아닙니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(33,2): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(33,7): error C2065: 'vx': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(34,2): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(34,7): error C2065: 'vy': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(36,6): error C2065: 'map': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(36,10): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(36,14): error C2065: 'WIDTH': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(36,22): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(36,28): error C2065: 'MAP_PROPERTY_VISIT': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(38,15): error C2065: 'map': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(38,20): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(38,29): error C2065: 'WIDTH': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(38,37): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(38,43): error C2065: 'MAP_PROPERTY_VISIT': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(39,18): error C2065: 'map': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(39,23): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(39,32): error C2065: 'WIDTH': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(39,40): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(39,46): error C2065: 'MAP_PROPERTY_VISIT': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(41,3): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(41,8): error C2065: 'vx': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(42,3): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(42,8): error C2065: 'vy': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(46,4): error C2065: 'vy': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(50,4): error C2065: 'vx': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(55,6): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(57,3): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(58,3): error C2065: 'vx': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(60,6): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(60,11): error C2065: 'WIDTH': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(62,3): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(62,7): error C2065: 'WIDTH': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(63,3): error C2065: 'vx': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(65,6): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(67,3): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(68,3): error C2065: 'vy': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(70,6): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(70,11): error C2065: 'HEIGHT': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(72,3): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(72,7): error C2065: 'HEIGHT': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(73,3): error C2065: 'vy': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(79,6): error C2653: 'EnemySpeed': 클래스 또는 네임스페이스 이름이 아닙니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(81,2): error C2065: 'sprite': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(82,18): error C2065: 'x': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(82,21): error C2065: 'y': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(83,2): error C2065: 'sprite': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(83,16): error C2065: 'enemyTexture': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(86,1): error C2653: 'EnemySpeed': 클래스 또는 네임스페이스 이름이 아닙니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(86,14): error C2523: '<알 수 없음>::~EnemySpeed': 소멸자 태그가 일치하지 않습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(87,1): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(86,24): error C2084: 'int EnemySpeed(void)' 함수에 이미 본문이 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(5): message : 'EnemySpeed'의 이전 정의를 참조하십시오.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(88,2): error C2065: 'sprite': 선언되지 않은 식별자입니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\EnemySpeed.cpp(89,4): error C2065: 'enemyTexture': 선언되지 않은 식별자입니다.
-  firstPage.cpp
+﻿  player.cpp
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,26): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,25): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\firstPage.cpp(12,6): warning C4189: 'a': 지역 변수가 초기화되었으나 참조되지 않았습니다.
-  gameSystem.cpp
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,26): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,25): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(232,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(234,10): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(235,10): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(236,58): warning C4456: 'pos' 선언은 이전 로컬 선언을 숨깁니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(223,14): message : 'pos' 선언을 참조하십시오.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(236,51): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(236,32): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(245,58): warning C4456: 'pos' 선언은 이전 로컬 선언을 숨깁니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(223,14): message : 'pos' 선언을 참조하십시오.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(245,52): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(245,34): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  pageManager.cpp
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,26): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,25): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  player.cpp
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,26): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,25): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(36,52): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(36,33): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(114,17): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
@@ -102,17 +8,15 @@ C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(117,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(119,12): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(120,12): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(168,40): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(168,36): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(183,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(184,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  TitlePage.cpp
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,26): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,25): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  EmptyProject.cpp
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,26): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,25): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\enemy.h(15,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(134,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(134,40): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(158,44): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(158,40): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(193,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(194,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다.
+  3 of 1169 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    11 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  EmptyProject_2010.vcxproj -> C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\Release\EmptyProject.exe
