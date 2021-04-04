@@ -1,5 +1,9 @@
 #pragma once
 #include "DXUT.h"
+#include <vector>
+
+using namespace std;
+
 class Player
 {
 public:
@@ -7,7 +11,8 @@ public:
 	~Player();
 	void Render();
 	void Update();
-	void CanGo();
+	void CanVisiting();
+	void CanEdge();
 
 	enum  PlayerState
 	{
@@ -18,9 +23,11 @@ public:
 	int px, py;
 	LPDIRECT3DTEXTURE9* playerTex;
 	LPD3DXSPRITE sprite;
-	D3DXVECTOR2 pos;
+	//vector<D3DXVECTOR2> visitingPos;
+	D3DXVECTOR2 startPos;
 	bool press;
 	int nextMap;
+	
 
 	D3DXVECTOR2 getPos()
 	{

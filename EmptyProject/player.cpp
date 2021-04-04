@@ -1,9 +1,11 @@
 #include "DXUT.h"
 #include "player.h"
 #include "global.h"
+#include <vector>
 
 Player::Player()
 {
+
 	playerState = ON_EDGE;
 
 	D3DXCreateSprite(DXUTGetD3D9Device(), &sprite);
@@ -37,6 +39,24 @@ void Player:: Render()
 
 void Player::Update()
 {
+	if (px < 0)
+	{
+		px = 0;
+	}
+	if (px >= WIDTH)
+	{
+		px = WIDTH-1;
+	}
+	if (py < 0)
+	{
+		py = 0;
+	}
+	if (py >= HEIGHT)
+	{
+		py = HEIGHT - 1;
+	}
+
+
 	if ((GetAsyncKeyState(VK_CONTROL) & 0x8000) != 0)
 	{
 		press = true;
@@ -48,62 +68,109 @@ void Player::Update()
 		if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
 		{
 			nextMap = map[py * WIDTH + (px+1)];
-			CanGo();
+			CanVisiting();
+			if (nextMap == MAP_PROPERTY_EDGE)
+			{
+				px += 1;
+			}
 		}
 		else if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
 		{
 			nextMap = map[py * WIDTH + (px - 1)];
-			CanGo();
+			CanVisiting();
+			if (nextMap == MAP_PROPERTY_EDGE)
+			{
+				px -= 1;
+			}
 		}
 		else if ((GetAsyncKeyState(VK_UP) & 0x8000) != 0)
 		{
 			nextMap = map[(py-1) * WIDTH + px];
-			CanGo();
+			CanVisiting();
+			if (nextMap == MAP_PROPERTY_EDGE)
+			{
+				py -= 1;
+			}
 		}
 		else if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0)
 		{
 			nextMap = map[(py+1) * WIDTH + px];
-			CanGo();
+			CanVisiting();
+			if (nextMap == MAP_PROPERTY_EDGE)
+			{
+				py += 1;
+			}
 		}
 	}
 	else if (playerState == VISITING)
 	{
+
+		if ((GetAsyncKeyState(VK_CONTROL) & 0x8000) == 0)
+		{
+			px = startPos.x;
+			py = startPos.y;
+			playerState = ON_EDGE;
+		}
+
 		if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
 		{
 			nextMap = map[py * WIDTH + (px + 1)];
-			CanGo();
+			if (nextMap == MAP_PROPERTY_EMPTY)
+			{
+				px += 1;
+			}	
+			CanEdge();
 		}
 		else if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
 		{
 			nextMap = map[py * WIDTH + (px - 1)];
-			CanGo();
+			if (nextMap == MAP_PROPERTY_EMPTY)
+			{
+				px -= 1;
+			}
+			CanEdge();
 		}
 		else if ((GetAsyncKeyState(VK_UP) & 0x8000) != 0)
 		{
 			nextMap = map[(py - 1) * WIDTH + px];
-			CanGo();
+			if (nextMap == MAP_PROPERTY_EMPTY)
+			{
+				py -= 1;
+			}
+			CanEdge();
 		}
 		else if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0)
 		{
-			nextMap = map[(py + 1) * WIDTH + px];
-			CanGo();
+			nextMap = map[(py + 1) * WIDTH + px];	
+			if (nextMap == MAP_PROPERTY_EMPTY)
+			{
+				py += 1;
+			}
+			CanEdge();
 		}
 	}
 
 	press = false;
 }
-void Player::CanGo()
+void Player::CanEdge()
+{
+	//visitingPos.push_back(D3DXVECTOR2(px, py));
+	map[py * WIDTH + px] = MAP_PROPERTY_VISITING;
+	if (nextMap == MAP_PROPERTY_EDGE)
+	{
+		playerState = ON_EDGE;
+	}
+}
+
+void Player::CanVisiting()
 {
 	if ((nextMap == MAP_PROPERTY_EMPTY) && press)
 	{
 		playerState = VISITING;
-		pos.x = px;
-		pos.y = py;
+		startPos.x = px;
+		startPos.y = py;
 	}
-	else if (nextMap == MAP_PROPERTY_EDGE)
-	{
-		px += 1;
-	}
+	
 }
 
 Player::~Player()

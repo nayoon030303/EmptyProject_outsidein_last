@@ -48,7 +48,7 @@ void GameSystem::Render()
 {
 	D3DXVECTOR3 pos(STARTX_POINT, STARTY_POINT, 0);
 	
-	
+	/*mask*/
 	spr->Begin(D3DXSPRITE_ALPHABLEND);
 	spr->Draw(*maskTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 255, 255, 255));
 	spr->End();
@@ -62,6 +62,11 @@ void GameSystem::Render()
 			{
 				D3DXVECTOR3 pos(STARTX_POINT + x, STARTY_POINT + y , 0);
 				spr->Draw(*dotTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 0, 0, 0));
+			}
+			else if (map[y * WIDTH + x] == MAP_PROPERTY_VISITING)
+			{
+				D3DXVECTOR3 pos(STARTX_POINT + x, STARTY_POINT + y, 0);
+				spr->Draw(*dotTex, 0, 0, &pos, D3DCOLOR_ARGB(255, 0, 255, 0));
 			}
 		}
 	}
