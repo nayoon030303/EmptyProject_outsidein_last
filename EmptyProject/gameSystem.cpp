@@ -8,7 +8,7 @@ using namespace std;
 GameSystem::GameSystem()
 {
 	Load();
-	player->px = 0;
+	player->px = WIDTH-1;
 	player->py = 0;
 	player->playerState = player->ON_EDGE;
 
@@ -49,7 +49,7 @@ void GameSystem::Update()
 	}
 
 	player->Update();
-	enemy->Update();
+	//enemy->Update();
 }
 
 void GameSystem::MakeEdge()

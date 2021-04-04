@@ -3,20 +3,40 @@ C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(36,52): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(36,33): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(114,17): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(115,17): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(117,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(119,12): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(120,12): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(134,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(134,40): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(158,44): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(158,40): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(193,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(194,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(71,17): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(72,17): warning C4244: '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(74,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(76,12): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(77,12): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(87,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(88,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(107,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(107,39): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(117,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(117,39): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(136,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(137,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(156,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(156,39): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(166,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(166,39): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(185,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(186,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(205,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(205,39): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(215,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(215,39): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(234,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(235,16): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(254,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(254,39): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(264,43): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(264,39): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(409,40): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.cpp(409,36): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다.
-  3 of 1169 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  1 of 1167 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    11 functions had inline decision re-evaluated but remain unchanged
+    12 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   EmptyProject_2010.vcxproj -> C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\Release\EmptyProject.exe
