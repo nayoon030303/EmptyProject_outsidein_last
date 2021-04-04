@@ -23,9 +23,10 @@ public:
 	int px, py;
 	LPDIRECT3DTEXTURE9* playerTex;
 	LPD3DXSPRITE sprite;
-	//vector<D3DXVECTOR2> visitingPos;
+	vector<D3DXVECTOR2> visitingPos;
 	D3DXVECTOR2 startPos;
 	bool press;
+	bool makeVisit;
 	int nextMap;
 	
 

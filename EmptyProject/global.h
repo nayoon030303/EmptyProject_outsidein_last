@@ -36,7 +36,8 @@ extern PageManager pageManager;
 
 extern int map[WIDTH * HEIGHT];
 extern int binaryMap[WIDTH * HEIGHT];
-extern int mapData[WIDTH * HEIGHT];
+extern DWORD* mapData;
+extern int mapData1[WIDTH * HEIGHT];
 
 
 //extern LPDIRECT3DTEXTURE9* tex;

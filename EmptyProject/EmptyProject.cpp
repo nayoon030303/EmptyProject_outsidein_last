@@ -12,7 +12,9 @@
 
 int map[WIDTH * HEIGHT];
 int binaryMap[WIDTH * HEIGHT];
-int mapData[WIDTH * HEIGHT];/* manager */
+DWORD* mapData;
+int mapData1[WIDTH * HEIGHT];
+/* manager */
 PageManager pageManager;
 
 
@@ -50,6 +52,7 @@ bool CALLBACK ModifyDeviceSettings( DXUTDeviceSettings* pDeviceSettings, void* p
 HRESULT CALLBACK OnD3D9CreateDevice( IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DESC* pBackBufferSurfaceDesc,
                                      void* pUserContext )
 {
+   
    
     pageManager.MakeTitlePage();
     return S_OK;

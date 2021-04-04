@@ -12,6 +12,9 @@ public:
 	void  Update();
 	void Render();
 	void Load();
+	void FloodFill(int x, int y, int n, int m);
+	void SetProperty();
+	void MakeEdge();
 
 	Player* player = new Player();
 	

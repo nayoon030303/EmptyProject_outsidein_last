@@ -7,6 +7,7 @@ Player::Player()
 {
 
 	playerState = ON_EDGE;
+	makeVisit = false;
 
 	D3DXCreateSprite(DXUTGetD3D9Device(), &sprite);
 	playerTex = new LPDIRECT3DTEXTURE9();
@@ -45,7 +46,7 @@ void Player::Update()
 	}
 	if (px >= WIDTH)
 	{
-		px = WIDTH-1;
+		px = WIDTH - 1;
 	}
 	if (py < 0)
 	{
@@ -64,15 +65,16 @@ void Player::Update()
 
 	if (playerState == ON_EDGE)
 	{
-		
+
 		if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
 		{
-			nextMap = map[py * WIDTH + (px+1)];
+			nextMap = map[py * WIDTH + (px + 1)];
 			CanVisiting();
 			if (nextMap == MAP_PROPERTY_EDGE)
 			{
 				px += 1;
 			}
+			
 		}
 		else if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
 		{
@@ -85,7 +87,7 @@ void Player::Update()
 		}
 		else if ((GetAsyncKeyState(VK_UP) & 0x8000) != 0)
 		{
-			nextMap = map[(py-1) * WIDTH + px];
+			nextMap = map[(py - 1) * WIDTH + px];
 			CanVisiting();
 			if (nextMap == MAP_PROPERTY_EDGE)
 			{
@@ -94,7 +96,7 @@ void Player::Update()
 		}
 		else if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0)
 		{
-			nextMap = map[(py+1) * WIDTH + px];
+			nextMap = map[(py + 1) * WIDTH + px];
 			CanVisiting();
 			if (nextMap == MAP_PROPERTY_EDGE)
 			{
@@ -107,18 +109,27 @@ void Player::Update()
 
 		if ((GetAsyncKeyState(VK_CONTROL) & 0x8000) == 0)
 		{
+			press = false;
+
 			px = startPos.x;
 			py = startPos.y;
 			playerState = ON_EDGE;
+			for (int i = 0; i < visitingPos.size(); ++i)
+			{
+				int nx = visitingPos[i].x;
+				int ny = visitingPos[i].y;
+				map[ny * WIDTH + nx] = MAP_PROPERTY_EMPTY;
+			}
+			visitingPos.clear();
 		}
 
-		if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
+		else if ((GetAsyncKeyState(VK_RIGHT) & 0x8000) != 0)
 		{
 			nextMap = map[py * WIDTH + (px + 1)];
 			if (nextMap == MAP_PROPERTY_EMPTY)
 			{
 				px += 1;
-			}	
+			}
 			CanEdge();
 		}
 		else if ((GetAsyncKeyState(VK_LEFT) & 0x8000) != 0)
@@ -141,7 +152,7 @@ void Player::Update()
 		}
 		else if ((GetAsyncKeyState(VK_DOWN) & 0x8000) != 0)
 		{
-			nextMap = map[(py + 1) * WIDTH + px];	
+			nextMap = map[(py + 1) * WIDTH + px];
 			if (nextMap == MAP_PROPERTY_EMPTY)
 			{
 				py += 1;
@@ -149,16 +160,18 @@ void Player::Update()
 			CanEdge();
 		}
 	}
-
 	press = false;
 }
+
 void Player::CanEdge()
 {
-	//visitingPos.push_back(D3DXVECTOR2(px, py));
+	visitingPos.push_back(D3DXVECTOR2(px, py));
 	map[py * WIDTH + px] = MAP_PROPERTY_VISITING;
 	if (nextMap == MAP_PROPERTY_EDGE)
 	{
 		playerState = ON_EDGE;
+		makeVisit = true;
+		press = false;
 	}
 }
 

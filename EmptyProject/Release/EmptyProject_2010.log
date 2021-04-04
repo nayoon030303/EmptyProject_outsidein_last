@@ -1,6 +1,20 @@
-﻿  코드를 생성하고 있습니다.
-  0 of 1006 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+﻿  gameSystem.cpp
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,26): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\player.h(35,22): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(231,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(233,10): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(234,10): warning C4244: '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(235,58): warning C4456: 'pos' 선언은 이전 로컬 선언을 숨깁니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(222,14): message : 'pos' 선언을 참조하십시오.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(235,51): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(235,32): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(244,58): warning C4456: 'pos' 선언은 이전 로컬 선언을 숨깁니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(222,14): message : 'pos' 선언을 참조하십시오.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(244,52): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\gameSystem.cpp(244,34): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다.
+  4 of 1159 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    11 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   EmptyProject_2010.vcxproj -> C:\Users\qwer1\2021\기능대회연습\EmptyProject_outsidein_last\EmptyProject_outsidein_last\EmptyProject\Release\EmptyProject.exe
